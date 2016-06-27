@@ -6,6 +6,7 @@
 		<!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Yantramanav:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
         
         <!-- Bootstrap Core CSS -->
     	<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
@@ -13,6 +14,7 @@
         <!-- Custom CSS -->
 		<link rel="stylesheet" href="{{ asset('css/custom.css') }}" type="text/css">
 		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
     </head>
     <body>
@@ -25,7 +27,10 @@
 		            <span class="sr-only">Toggle navigation</span>
 		            <span class="icon-bar"></span>
 		        </button>
-		        <a class="navbar-brand" href="{{ URL::to('/') }}"><img src="{{ asset('images/go_logo.png') }}" class="nav-icon"/></a>
+		        <a class="navbar-brand" href="{{ URL::to('/') }}">
+		        	<p class="nav-icon">GO</p>
+		        	<!--<img src="{{ asset('images/go_logo.png') }}" class="nav-icon"/>-->
+		        </a>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
