@@ -158,6 +158,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Proengsoft\JsValidation\JsValidationServiceProvider::class,
 
     ],
 
@@ -211,6 +212,7 @@ return [
 		'HTML'     => Collective\Html\HtmlFacade::class,
 		'BootForm' => Watson\BootstrapForm\Facades\BootstrapForm::class,
 		'Input' => Illuminate\Support\Facades\Input::class,
+		'JsValidator' => Proengsoft\JsValidation\Facades\JsValidatorFacade::class,
 		
         'Group' => App\Models\Group::class,
         'Item' => App\Models\Item::class,

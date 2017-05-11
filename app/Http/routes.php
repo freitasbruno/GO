@@ -82,6 +82,11 @@ Route::get('profile', array(
 		return view('profile');
 }));
 
+Route::get('groups', [
+    'middleware' => 'auth',
+    'uses' => 'GroupController@index'
+]);
+
 Route::get('profile/{group_id}', function ($group_id) {
 	session()->set('current_group', $group_id);
 	return Redirect::to('profile');
